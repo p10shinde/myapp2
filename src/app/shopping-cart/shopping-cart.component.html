@@ -1,0 +1,40 @@
+<div class="allContainer" *ngIf="!emptyCart" >
+  <div class="productPanel panel">
+    <h3>MY CART ({{cartProducts.length}})</h3>
+    <hr>
+    <div class="productList" *ngFor="let cp of cartProducts">
+      <div class="image">
+        <img src="../../assets/images/{{cp.image}}" alt="Preview">
+      </div>
+      <div class="details">
+        <h3>{{cp.name}}</h3>
+        <p>{{cp.price | currency:'&#8377;'}}</p>
+        <button class="removeFromCartButton" mat-raised-button matTooltip="Remove" (click)="removeFromCart(cp.id)">Remove</button>
+      </div>
+      <div class="delivery">
+
+        <p>Delivery in {{  cp.delivery.day }} {{cp.delivery.day ===1 ? 'day' : 'days'}}, {{ cp.delivery.days }} |&nbsp;</p>
+        <p *ngIf="getType(cp.deliveryCharges) === 'number'"> {{ cp.deliveryCharges | currency:'&#8377;'}}</p>
+        <p *ngIf="getType(cp.deliveryCharges) === 'string'"> {{ cp.deliveryCharges }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="pricingPanel panel">
+    <h3>PRICE DETAILS</h3>
+    <hr>
+    <div class="priceContainer">
+      <p>Price ({{cartProducts.length}} items)</p>
+      <p class="floatRight"><b>{{invoice.price | number: '1.1'}}</b></p>
+      <p>Delivery Charges</p>
+      <p class="floatRight">{{invoice.totalDelCharges}}</p>
+      <hr class="dotted">
+      <p>Amount Payble</p>
+      <p class="floatRight"><b>{{invoice.amountPayable | currency:'&#8377;'}}</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="emptyCart" *ngIf="emptyCart">
+  <img src="../../assets/images/emptyCart.png" alt="">
+  <p>Your shopping cart is empty</p>
+</div>

@@ -1,0 +1,84 @@
+.allContainer {
+  display: flex;
+}
+.allContainer .panel {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.allContainer hr {
+  margin: 1em 0;
+  display: block;
+  height: 1px;
+  border-top: 1px solid #f4f4f4;
+}
+.allContainer .productPanel {
+  width: 70%;
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 1em;
+  flex: 4;
+  margin: 0 1em 0 0;
+}
+.allContainer .productList {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0 0;
+}
+.allContainer .productList .image {
+  flex: 1;
+}
+.allContainer .productList .image img {
+  width: 150px;
+}
+.allContainer .productList .details {
+  flex: 2;
+  position: relative;
+}
+.allContainer .productList .details .removeFromCartButton {
+  background: #f44336;
+  color: white;
+}
+.allContainer .productList .details p {
+  position: absolute;
+  bottom: 55px;
+}
+.allContainer .productList .details button {
+  position: absolute;
+  bottom: 7px;
+}
+.allContainer .productList .delivery {
+  flex: 2;
+}
+.allContainer .productList .delivery p {
+  display: inline-block;
+}
+.allContainer .pricingPanel {
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 1em;
+  flex: 1;
+}
+.allContainer hr.dotted {
+  border: 1px dashed #adaaaa;
+}
+.allContainer .priceContainer {
+  flex: 2;
+  margin-left: 1%;
+}
+.allContainer .priceContainer p {
+  display: inline-block;
+  padding: .3em;
+}
+.allContainer .priceContainer p.floatRight {
+  float: right;
+}
+.emptyCart {
+  padding: 2em;
+  text-align: center;
+}
+.emptyCart img {
+  width: 600px;
+}
+.emptyCart p {
+  font-size: 1.5em;
+}

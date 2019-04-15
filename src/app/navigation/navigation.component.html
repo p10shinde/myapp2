@@ -1,0 +1,26 @@
+<div class="nav-bar">
+  <button class="home" mat-button [routerLink]="['/home']" routerLinkActive="active" >Home</button>
+
+  <button class="aboutus" mat-button [routerLink]="['/aboutus']" routerLinkActive="active">About Us</button>
+
+  <button class="contactus" mat-button [routerLink]="['/contactus']" routerLinkActive="active">Contact Us</button>
+  <button class="login" *ngIf="!isLoggedIn" mat-button [routerLink]="['/login']" routerLinkActive="active">Login/Sign Up</button>
+  <button class="wishIcon" mat-mini-fab>
+    <mat-icon aria-label="wishlist">bookmark</mat-icon>
+    <span>{{wishlistCount}}</span>
+  </button>
+
+  <button class="cartIcon" mat-mini-fab [routerLink]="['/shoppingcart']">
+    <mat-icon aria-label="shopping cart">shopping_cart</mat-icon>
+    <span>{{cartlistCount}}</span>
+  </button>
+</div>
+
+<!--
+<div class="bar">
+  <ul>
+    <li><a routerLink="./home">Home</a></li>
+    <li><a routerLink="/contactus">ContactUs</a></li>
+    <li><a routerLink="./aboutus"></a>AboutUs</li>
+  </ul>
+</div> -->

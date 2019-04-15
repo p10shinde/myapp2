@@ -1,0 +1,33 @@
+<div class="allContainer">
+    <mat-form-field appearance="outline">
+      <mat-label>Username/Email</mat-label>
+      <input matInput [formControl]="username" required>
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input color="#3f51b5" type="password" matInput [formControl]="password" required>
+      <mat-icon matSuffix>vpn_key</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline" *ngIf="signupActive">
+        <mat-label>Re-Type Password</mat-label>
+        <input color="#3f51b5" type="password" matInput [formControl]="password2" required>
+        <mat-icon matSuffix>vpn_key</mat-icon>
+      </mat-form-field>
+    <div class="buttons">
+      <button class="backButton" mat-button *ngIf="signupActive" (click)="backButton()">
+        <i class="material-icons">keyboard_backspace</i>
+      </button>
+      <button class="signupButton" mat-button (click)="signUp()">Signup</button>
+      <button class="loginButton" mat-button *ngIf="!signupActive" (click)="login()">Login</button>
+    </div>
+    <a>Forgot Password</a>
+
+
+
+  <!-- <label for="">Name : </label>
+  <input type="text">
+  <label>Password : </label>
+  <input type="password">
+  <button (click)="login()">Login</button> -->
+</div>

@@ -1,0 +1,37 @@
+<div class="allContainer">
+  <div class="cardHolder" *ngFor="let product of products; let i = index;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>
+          <div class="productRate">
+            <p>{{ product.rating | number: '1.1'}}</p> <i class="material-icons starIcon">star_rate</i>
+          </div>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{product.image}} alt="Sample Product">
+      <mat-card-content>
+        <ul *ngFor="let d of product.description">
+          <li>{{ d }}</li>
+        </ul>
+        <h3 class="price">{{product.price | currency:'&#8377;'}}</h3>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="favIcon" mat-icon-button color="warn">
+          <mat-icon aria-label="favourite" (click)="favouriteClick(product.id)" *ngIf="product.favourite == false">favorite_border</mat-icon>
+          <mat-icon aria-label="favourite" (click)="favouriteClick(product.id)" *ngIf="product.favourite == true">favorite</mat-icon>
+        </button>
+        <button class="wishIcon" mat-icon-button>
+          <mat-icon aria-label="wishlist" (click)="wishlistClick(product.id)" *ngIf="product.wishlist == false">bookmark_border</mat-icon>
+          <mat-icon aria-label="wishlist" (click)="wishlistClick(product.id)" *ngIf="product.wishlist == true">bookmark</mat-icon>
+        </button>
+        <button class="cartIcon" mat-icon-button>
+          <mat-icon aria-label="shopping cart" (click)="addcartClick(i)" *ngIf="product.cart == true">remove_shopping_cart</mat-icon>
+          <mat-icon aria-label="shopping cart" (click)="addcartClick(i)" *ngIf="product.cart == false">add_shopping_cart</mat-icon>
+        </button>
+        <button class="showIcon" mat-icon-button (click)="navigate(product.id)"><mat-icon aria-label="show">visibility</mat-icon></button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

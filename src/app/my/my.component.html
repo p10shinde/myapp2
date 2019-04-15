@@ -1,0 +1,31 @@
+<p *ngIf="abc">
+  {{ myData }}
+</p>
+
+<ul>
+  <li *ngFor="let day of days">
+    {{ day }}
+  </li>
+</ul>
+
+
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">
+    color is red
+  </p>
+
+  <p *ngSwitchCase="'green'">
+      color is green
+    </p>
+
+
+</div>
+
+<ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+<button (click)="changeData()">ChangeData</button>

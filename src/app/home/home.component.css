@@ -1,0 +1,70 @@
+div.allContainer {
+  background: #f4f4f4;
+  width: 100%;
+}
+div.allContainer div.cardHolder {
+  display: inline-block;
+  padding: 1em;
+  width: 20%;
+}
+div.allContainer div.cardHolder .example-card {
+  max-width: 200px;
+}
+div.allContainer div.cardHolder .example-card ::ng-deep .mat-card-header-text {
+  margin: 0 !important;
+}
+div.allContainer div.cardHolder .example-card .mat-card-image {
+  margin: 0 -16px 0px -16px;
+}
+div.allContainer div.cardHolder .example-card .productRate {
+  background: #388e3c;
+  color: #fff;
+  padding: .1em;
+  width: 40px;
+  height: 19px;
+  border-radius: 3px;
+}
+div.allContainer div.cardHolder .example-card .productRate p {
+  display: inline-block;
+  position: relative;
+  left: 1px;
+}
+div.allContainer div.cardHolder .example-card .productRate .starIcon {
+  font-size: 1em;
+  position: relative;
+  top: -16px;
+  left: 23px;
+}
+div.allContainer div.cardHolder .example-card mat-card-content ul {
+  color: #24242f;
+  margin-left: 1em;
+  list-style: none;
+}
+div.allContainer div.cardHolder .example-card mat-card-content ul li::before {
+  content: "\2022";
+  color: #c1c1c1;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+div.allContainer div.cardHolder .example-card mat-card-content li {
+  margin: .2em;
+}
+div.allContainer div.cardHolder .example-card mat-card-content .price {
+  float: right;
+}
+div.allContainer div.cardHolder .example-card mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+div.allContainer div.cardHolder .example-card mat-card-actions button {
+  margin: 0;
+}
+div.allContainer div.cardHolder .example-card mat-card-actions .wishIcon {
+  color: #61CCD5;
+}
+div.allContainer div.cardHolder .example-card mat-card-actions .cartIcon {
+  color: #33658A;
+}

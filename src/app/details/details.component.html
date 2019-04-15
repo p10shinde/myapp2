@@ -1,0 +1,55 @@
+<div class="allContainer">
+  <button mat-raised-button matTooltip="Go Back" (click)="goback()"><i class="material-icons">keyboard_backspace</i></button>
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" autoplay>
+        <source src="../../assets/videos/test.mp4" type="video/mp4">
+    </video>
+  </vg-player>
+  <div class="detailsContainer">
+    <div class="leftContainer">
+      <h2>{{product.name}}</h2>
+      <div class="productRate">
+        <p>{{ product.rating | number: '1.1'}}</p> <i class="material-icons starIcon">star_rate</i>
+      </div>
+      <img src="{{product.image}}" alt="">
+      <h3>{{product.price | currency:'&#8377;'}}</h3>
+      <button mat-raised-button class="addtocart" (click)="addToCart()" matTooltip="Add To Cart"><i class="material-icons">shopping_cart</i></button>
+      <button mat-raised-button class="buynow" (click)="buyNow()" matTooltip="Buy Now"><i class="material-icons">offline_bolt</i></button>
+    </div>
+    <div class="rightContainer">
+      <h2 class="sectionTitle">Highlights </h2>
+      <ul class="sectionContent">
+        <li *ngFor="let d of product.highlights">{{d}}</li>
+      </ul>
+      <h2 class="sectionTitle">Delivery </h2>
+      <div class="sectionContent deliveryContent">
+        <mat-form-field >
+          <span matPrefix><i class="material-icons">location_on</i></span>
+          <input type="text" matInput placeholder="Enter Delivery Pincode" #pin>
+          <a matSuffix class="checkPin" (click)="checkPin(pin)">Check</a>
+        </mat-form-field>
+        <p>Delivery in next {{ day }} {{day ===1 ? 'day' : 'days'}}, {{days}}</p>
+      </div>
+      <h2 class="sectionTitle">Reviews</h2>
+      <div class="sectionContent reviewContent">
+        <div class="ratingDiv" *ngFor="let r of product.reviews">
+          <div class="productRate">
+            <p>{{ r.rating | number: '1.1'}}</p> <i class="material-icons starIcon">star_rate</i>
+          </div>
+          <p class="reviewTitle">{{ r.title }}</p>
+          <p class="reviewDescription">{{r.description}}</p>
+          <div class="reviewImages">
+            <img *ngFor="let _img of r.images" src="../../../../assets/images/{{ _img }}" alt="reviewImage">
+          </div>
+          <div class="reviewUser">
+            <p>{{r.username}} ,</p>
+            <p> {{r.location}} </p>
+            <p> {{r.date}}</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

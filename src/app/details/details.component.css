@@ -1,0 +1,125 @@
+.allContainer vg-player {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  border-radius: 25px;
+}
+.allContainer .detailsContainer {
+  margin-top: 2%;
+  display: flex;
+}
+.allContainer .leftContainer {
+  position: relative;
+}
+.allContainer .leftContainer h2 {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  margin-bottom: .5em;
+}
+.allContainer .leftContainer img {
+  display: block;
+  position: relative;
+  width: 400px;
+}
+.allContainer .leftContainer h3 {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 1em 0em 1em 0;
+}
+.allContainer .leftContainer .buynow {
+  background: #f4611a;
+}
+.allContainer .leftContainer .addtocart {
+  background: #ff9f00;
+}
+.allContainer .rightContainer {
+  margin-left: 3%;
+  margin-top: 4.4em;
+}
+.allContainer .rightContainer .sectionTitle {
+  color: #a1a1a1;
+}
+.allContainer .rightContainer .sectionContent {
+  margin-left: 6%;
+}
+.allContainer .rightContainer .deliveryContent a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2874f0;
+}
+.allContainer .rightContainer .reviewContent .ratingDiv {
+  padding: 1em 0;
+}
+.allContainer .rightContainer .reviewContent hr {
+  margin: .5em 0 .5em 0;
+}
+.allContainer .rightContainer .reviewContent .reviewTitle {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1%;
+}
+.allContainer .rightContainer .reviewContent .reviewDescription {
+  position: relative;
+  top: -11px;
+}
+.allContainer .rightContainer .reviewContent .productRate {
+  display: inline-block;
+}
+.allContainer .rightContainer .reviewContent .reviewImages img {
+  width: 100px;
+}
+.allContainer .rightContainer .reviewContent .reviewImages img {
+  margin-left: 1%;
+}
+.allContainer .rightContainer .reviewContent .reviewUser p {
+  display: inline-block;
+  color: #808080;
+  font-size: .8em;
+}
+.allContainer .rightContainer .reviewContent .reviewUser p:not(:first-child) {
+  padding-left: 2%;
+}
+.allContainer .rightContainer ul {
+  list-style: none;
+  line-height: 3;
+}
+.allContainer .rightContainer li:before {
+  content: "\f00c";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */
+}
+.allContainer .rightContainer h2 {
+  font-weight: 400;
+}
+.allContainer .productRate {
+  background: #388e3c;
+  color: #fff;
+  padding: .1em;
+  width: 43px;
+  height: 21px;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+.allContainer .productRate p {
+  display: inline-block;
+  position: relative;
+  left: 1px;
+}
+.allContainer .productRate .starIcon {
+  font-size: 1em;
+  position: relative;
+  top: -18px;
+  left: 23px;
+}
+.allContainer button {
+  background: #0B7A75;
+  color: #fff;
+  margin: 1em 1em 1em 0;
+}

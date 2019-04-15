@@ -1,0 +1,41 @@
+footer {
+  width: 100%;
+  background: #0c837e;
+  padding: 3em;
+  margin-top: 20%;
+}
+footer .footerDiv {
+  display: flex;
+  justify-content: center;
+}
+footer .listSection {
+  display: inline-block;
+}
+footer .listSection:not(:first-child) {
+  margin: 0 2em;
+}
+footer .title {
+  color: #272020;
+  font-weight: 500;
+  font-size: 1em;
+}
+footer .listItems {
+  margin-top: .9em;
+  list-style: none;
+}
+footer .listItems li {
+  padding: 0.2em 0;
+}
+footer .listItems li a,
+footer .address {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  font-size: .9em;
+}
+footer .address {
+  max-width: 200px;
+}
+footer .separator {
+  border-right: 1px solid #1b2020;
+}

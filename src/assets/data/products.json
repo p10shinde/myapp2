@@ -1,0 +1,72 @@
+[
+  {
+    "name": "product 1",
+    "rating": 4.5,
+    "image": "../../assets/images/sample_product.jpg",
+    "description" : [
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1"
+    ],
+    "favourite" : false
+  },
+  {
+    "name": "product 1",
+    "rating": 4.5,
+    "image": "../../assets/images/sample_product.jpg",
+    "description" : [
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1"
+    ],
+    "favourite" : false
+  },
+  {
+    "name": "product 1",
+    "rating": 4.5,
+    "image": "../../assets/images/sample_product.jpg",
+    "description" : [
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1"
+    ],
+    "favourite" : false
+  },
+  {
+    "name": "product 1",
+    "rating": 4.5,
+    "image": "../../assets/images/sample_product.jpg",
+    "description" : [
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1"
+    ],
+    "favourite" : false
+  },
+  {
+    "name": "product 1",
+    "rating": 4.5,
+    "image": "../../assets/images/sample_product.jpg",
+    "description" : [
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1",
+      "description1"
+    ],
+    "favourite" : false
+  }
+]

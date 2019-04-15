@@ -1,0 +1,135 @@
+.allContainer {
+  vg-player {
+    width: 50%;
+    height: 20%;
+    margin: auto;
+    border-radius: 25px;
+  }
+  .detailsContainer {
+    margin-top: 2%;
+    display: flex;
+  }
+  .leftContainer {
+    position: relative;
+    h2 {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      margin-bottom: .5em;
+    }
+    img {
+      display: block;
+      position: relative;
+      width: 400px;
+    }
+    h3 {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      margin: 1em 0em 1em 0;
+
+    }
+    .buynow {
+      background: #f4611a;
+    }
+    .addtocart {
+      background: #ff9f00;
+    }
+
+  }
+  .rightContainer {
+    margin-left: 3%;
+    margin-top: 4.4em;
+    .sectionTitle {
+      color: #a1a1a1;
+    }
+    .sectionContent {
+      margin-left: 6%;
+    }
+    .deliveryContent {
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #2874f0
+      }
+    }
+    .reviewContent {
+      .ratingDiv {
+        padding: 1em 0;
+      }
+      hr {
+        margin: .5em 0 .5em 0;
+      }
+      .reviewTitle {
+        display: inline-block;
+        position: absolute;
+        margin-left: 1%;
+      }
+      .reviewDescription {
+        position: relative;
+        top: -11px;
+      }
+      .productRate {
+        display: inline-block;
+      }
+      .reviewImages img {
+        width: 100px;
+      }
+      .reviewImages img {
+        margin-left: 1%;
+      }
+
+      .reviewUser p {
+        display: inline-block;
+        color: #808080;
+        font-size: .8em;
+      }
+      .reviewUser p:not(:first-child) {
+        padding-left: 2%;
+      }
+    }
+    ul {
+      list-style: none;
+      line-height: 3;
+    }
+    li:before {
+      content: "\f00c"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -1.3em; /* same as padding-left set on li */
+      width: 1.3em; /* same as padding-left set on li */
+    }
+    h2 {
+      font-weight: 400;
+    }
+  }
+  .productRate {
+    background: #388e3c;
+    color: #fff;
+    padding: .1em;
+    width: 43px;
+    height: 21px;
+    border-radius: 3px;
+    margin-bottom: 0.5em;
+    p {
+      display: inline-block;
+      position: relative;
+      left: 1px;
+    }
+    .starIcon {
+      font-size: 1em;
+      position: relative;
+      top: -18px;
+      left: 23px;
+      // line-height: 1.5
+    }
+  }
+  button {
+    background: #0B7A75;
+    color: #fff;
+    margin: 1em 1em 1em 0;
+  }
+}
+
+
+

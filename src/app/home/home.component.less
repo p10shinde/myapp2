@@ -1,0 +1,83 @@
+div.allContainer {
+  background: #f4f4f4;
+  width: 100%;
+  div.cardHolder {
+    display: inline-block;
+    padding: 1em;
+    width: 20%;
+    .example-card {
+      max-width: 200px;
+    ::ng-deep .mat-card-header-text {
+        margin: 0 !important;
+      }
+      .mat-card-image {
+        margin: 0 -16px 0px -16px;
+      }
+
+      .productRate {
+        background: #388e3c;
+        color: #fff;
+        padding: .1em;
+        width: 40px;
+        height: 19px;
+        border-radius: 3px;
+        p {
+          display: inline-block;
+          position: relative;
+          left: 1px;
+        }
+        .starIcon {
+          font-size: 1em;
+          position: relative;
+          top: -16px;
+          left: 23px;
+          // line-height: 1.5
+        }
+      }
+      mat-card-content {
+        ul {
+          color: #24242f;
+          margin-left: 1em;
+          list-style: none;
+        }
+
+        ul li::before {
+          content: "\2022";
+          color: #c1c1c1;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+        li {
+          margin: .2em;
+        }
+
+        .price {
+          float: right;
+
+        }
+      }
+      mat-card-actions {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        button {
+          margin: 0;
+        }
+        .wishIcon {
+          color: #61CCD5;
+        }
+        .cartIcon {
+          color: #33658A;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
